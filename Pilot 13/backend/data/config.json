@@ -1,0 +1,20 @@
+{
+  "avg_speed_kmph": 80.0,
+  "max_driver_hours": 9.0,
+  "swap_time_hours": 0.333,
+  "cost_per_km_eur": 2.25,
+  "handling_fee_eur": 40.0,
+  "contingency_multiplier": 1.1,
+  "kg_to_mwh_factor": 0.0152,
+  "bar_to_kg_factor": 6.579,
+  "critical_hours_threshold": 10.0,
+  "warning_hours_threshold": 24.0,
+  "safe_hours_threshold": 48.0,
+  "min_billed_km": 50.0,
+  "full_threshold_percent": 80.0,
+  "empty_threshold_percent": 20.0,
+  "min_containers_at_plant": 1,
+  "urgency_factor_m": 0,
+  "usable_floor_bar": 20,
+  "fill_site_penalty_eur": 100.0
+}

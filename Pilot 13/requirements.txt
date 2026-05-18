@@ -1,0 +1,39 @@
+# GASUM Biogas Logistics Decision Support System
+# Backend Dependencies
+
+# Web Framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+
+# Data Models
+pydantic>=2.5.0
+
+# VRP Solver
+ortools>=9.15.6755,<9.16
+
+# Data Processing
+pandas>=2.1.0
+openpyxl>=3.1.0
+
+# HTTP Client (for frontend development)
+httpx>=0.26.0
+
+# AI chatbot
+openai>=1.0.0
+
+# CORS
+starlette>=0.35.0
+
+# Date/Time
+python-dateutil>=2.8.0
+
+# UUID generation (built-in, listed for clarity)
+# uuid - built into Python
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
+
+# Type checking
+mypy>=1.8.0

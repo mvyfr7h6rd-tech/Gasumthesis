@@ -1,0 +1,130 @@
+{
+  "helsinki_malmi": {
+    "id": "helsinki_malmi",
+    "name": "Hub A",
+    "site_type": "production",
+    "location": "Reference hub",
+    "latitude": 60.25,
+    "longitude": 25.01,
+    "bays_fixed": 3,
+    "bays": [
+      {
+        "bay_id": "Bay1",
+        "pressure_bar": 200,
+        "serial_number": "1001"
+      },
+      {
+        "bay_id": "Bay2",
+        "pressure_bar": 200,
+        "serial_number": "1002"
+      },
+      {
+        "bay_id": "Bay3",
+        "pressure_bar": 200,
+        "serial_number": "1003"
+      }
+    ],
+    "consumption_rate_kg_hour": 0.0,
+    "production": {
+      "mode": "UNKNOWN",
+      "kg_per_h": null,
+      "mwh_per_h": null
+    },
+    "flaring_cost_eur_mwh": 0.0,
+    "swap_allowed": true
+  },
+  "huittinen_vampula": {
+    "id": "huittinen_vampula",
+    "name": "Plant B",
+    "site_type": "production",
+    "location": "Reference plant",
+    "latitude": 61.18,
+    "longitude": 22.7,
+    "bays_fixed": 5,
+    "bays": [
+      {
+        "bay_id": "Bay1",
+        "pressure_bar": 20,
+        "serial_number": "1004"
+      },
+      {
+        "bay_id": "Bay2",
+        "pressure_bar": 20,
+        "serial_number": "1005"
+      },
+      {
+        "bay_id": "Bay3",
+        "pressure_bar": 20,
+        "serial_number": "1006"
+      },
+      {
+        "bay_id": "Bay4",
+        "pressure_bar": 20,
+        "serial_number": "1007"
+      },
+      {
+        "bay_id": "Bay5",
+        "pressure_bar": 20,
+        "serial_number": "1008"
+      }
+    ],
+    "consumption_rate_kg_hour": 0.0,
+    "production": {
+      "mode": "KG_PER_H",
+      "kg_per_h": 250.0,
+      "mwh_per_h": null
+    },
+    "flaring_cost_eur_mwh": 120.0,
+    "swap_allowed": true
+  },
+  "tampere": {
+    "id": "tampere",
+    "name": "Station C",
+    "site_type": "traffic",
+    "location": "Reference station",
+    "latitude": 61.5,
+    "longitude": 23.76,
+    "bays_fixed": 2,
+    "bays": [
+      {
+        "bay_id": "Bay1",
+        "pressure_bar": 250,
+        "serial_number": "1009"
+      },
+      {
+        "bay_id": "Bay2",
+        "pressure_bar": 250,
+        "serial_number": "1010"
+      }
+    ],
+    "consumption_rate_kg_hour": 150.0,
+    "production": null,
+    "flaring_cost_eur_mwh": 0.0,
+    "swap_allowed": true
+  },
+  "salo": {
+    "id": "salo",
+    "name": "Station D",
+    "site_type": "traffic",
+    "location": "Reference station",
+    "latitude": 60.38,
+    "longitude": 23.13,
+    "bays_fixed": 2,
+    "bays": [
+      {
+        "bay_id": "Bay1",
+        "pressure_bar": 20,
+        "serial_number": "1011"
+      },
+      {
+        "bay_id": "Bay2",
+        "pressure_bar": 243,
+        "serial_number": "1012"
+      }
+    ],
+    "consumption_rate_kg_hour": 50.0,
+    "production": null,
+    "flaring_cost_eur_mwh": 0.0,
+    "swap_allowed": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "TRUCK001": {
+    "id": "TRUCK001",
+    "carrier": "SPEED",
+    "capacity": 3,
+    "home_site_id": "helsinki_malmi",
+    "start": {
+      "kind": "site",
+      "site_id": "helsinki_malmi"
+    },
+    "force_end": null,
+    "current_location_site_id": "helsinki_malmi",
+    "current_load": [],
+    "initial_load": 0,
+    "start_resolved": false
+  },
+  "TRUCK002": {
+    "id": "TRUCK002",
+    "carrier": "SPEED",
+    "capacity": 3,
+    "home_site_id": "huittinen_vampula",
+    "start": {
+      "kind": "site",
+      "site_id": "huittinen_vampula"
+    },
+    "force_end": null,
+    "current_location_site_id": "huittinen_vampula",
+    "current_load": [],
+    "initial_load": 0,
+    "start_resolved": false
+  }
+}

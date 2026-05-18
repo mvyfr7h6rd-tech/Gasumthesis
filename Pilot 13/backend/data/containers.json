@@ -1,0 +1,132 @@
+{
+  "CNT001": {
+    "id": "CNT001",
+    "location_site_id": "helsinki_malmi",
+    "location_bay": "Bay1",
+    "pressure_bar": 200.0,
+    "mwh": 20.0032,
+    "kg": 1316.0,
+    "max_pressure_bar": 250.0,
+    "status": "at_site"
+  },
+  "CNT002": {
+    "id": "CNT002",
+    "location_site_id": "helsinki_malmi",
+    "location_bay": "Bay2",
+    "pressure_bar": 200.0,
+    "mwh": 20.0032,
+    "kg": 1316.0,
+    "max_pressure_bar": 250.0,
+    "status": "at_site"
+  },
+  "CNT003": {
+    "id": "CNT003",
+    "location_site_id": "helsinki_malmi",
+    "location_bay": "Bay3",
+    "pressure_bar": 200.0,
+    "mwh": 20.0032,
+    "kg": 1316.0,
+    "max_pressure_bar": 250.0,
+    "status": "at_site"
+  },
+  "CNT004": {
+    "id": "CNT004",
+    "location_site_id": "huittinen_vampula",
+    "location_bay": "Bay1",
+    "pressure_bar": 20.0,
+    "mwh": 2.00032,
+    "kg": 131.6,
+    "max_pressure_bar": 250.0,
+    "status": "at_site"
+  },
+  "CNT005": {
+    "id": "CNT005",
+    "location_site_id": "huittinen_vampula",
+    "location_bay": "Bay2",
+    "pressure_bar": 20.0,
+    "mwh": 2.00032,
+    "kg": 131.6,
+    "max_pressure_bar": 250.0,
+    "status": "at_site"
+  },
+  "CNT006": {
+    "id": "CNT006",
+    "location_site_id": "huittinen_vampula",
+    "location_bay": "Bay3",
+    "pressure_bar": 20.0,
+    "mwh": 2.00032,
+    "kg": 131.6,
+    "max_pressure_bar": 250.0,
+    "status": "at_site"
+  },
+  "CNT007": {
+    "id": "CNT007",
+    "location_site_id": "huittinen_vampula",
+    "location_bay": "Bay4",
+    "pressure_bar": 20.0,
+    "mwh": 2.00032,
+    "kg": 131.6,
+    "max_pressure_bar": 250.0,
+    "status": "at_site"
+  },
+  "CNT008": {
+    "id": "CNT008",
+    "location_site_id": "huittinen_vampula",
+    "location_bay": "Bay5",
+    "pressure_bar": 20.0,
+    "mwh": 2.00032,
+    "kg": 131.6,
+    "max_pressure_bar": 250.0,
+    "status": "at_site"
+  },
+  "CNT009": {
+    "id": "CNT009",
+    "location_site_id": "tampere",
+    "location_bay": "Bay1",
+    "pressure_bar": 250.0,
+    "mwh": 43.0008,
+    "kg": 2829.0,
+    "max_pressure_bar": 250.0,
+    "status": "at_site"
+  },
+  "CNT010": {
+    "id": "CNT010",
+    "location_site_id": "tampere",
+    "location_bay": "Bay2",
+    "pressure_bar": 250.0,
+    "mwh": 43.0008,
+    "kg": 2829.0,
+    "max_pressure_bar": 250.0,
+    "status": "at_site"
+  },
+  "CNT011": {
+    "id": "CNT011",
+    "location_site_id": "salo",
+    "location_bay": "Bay1",
+    "pressure_bar": 20.0,
+    "mwh": 2.00032,
+    "kg": 131.6,
+    "max_pressure_bar": 250.0,
+    "status": "at_site"
+  },
+  "CNT012": {
+    "id": "CNT012",
+    "location_site_id": "salo",
+    "location_bay": "Bay2",
+    "pressure_bar": 243.0,
+    "mwh": 39.781136000000004,
+    "kg": 2617.1800000000003,
+    "max_pressure_bar": 250.0,
+    "status": "at_site"
+  },
+  "CNT013": {
+    "id": "CNT013",
+    "location_site_id": "",
+    "location_bay": "",
+    "pressure_bar": 250.0,
+    "mwh": 43.0,
+    "kg": 2828.95,
+    "max_pressure_bar": 250.0,
+    "status": "in_transit"
+  }
+}

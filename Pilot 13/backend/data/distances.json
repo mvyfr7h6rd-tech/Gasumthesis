@@ -1,0 +1,26 @@
+{
+  "helsinki_malmi": {
+    "helsinki_malmi": 0,
+    "huittinen_vampula": 191.0,
+    "tampere": 176.0,
+    "salo": 119.0
+  },
+  "huittinen_vampula": {
+    "helsinki_malmi": 191.0,
+    "huittinen_vampula": 0,
+    "tampere": 93.0,
+    "salo": 96.0
+  },
+  "tampere": {
+    "helsinki_malmi": 176.0,
+    "huittinen_vampula": 93.0,
+    "tampere": 0,
+    "salo": 155.0
+  },
+  "salo": {
+    "helsinki_malmi": 119.0,
+    "huittinen_vampula": 96.0,
+    "tampere": 155.0,
+    "salo": 0
+  }
+}

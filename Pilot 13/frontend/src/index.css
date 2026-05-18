@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0f172a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  height: 100vh;
+}
+
+/* Leaflet overrides */
+.leaflet-container {
+  background: #1e293b !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #1e293b;
+  color: white;
+  border-radius: 8px;
+}
+
+.leaflet-popup-tip {
+  background: #1e293b;
+}
+
+.leaflet-popup-content {
+  margin: 12px;
+}
+
+/* Custom marker styles */
+.custom-marker {
+  background: transparent;
+  border: none;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* ── Route segment order labels ────────────────────────────────────────────── */
+/* Leaflet DivIcon wrapper — must be transparent so the badge is the only visual */
+.route-seg-label {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Numbered segment badge — pill-shaped to fit "D.N" labels */
+.seg-badge {
+  min-width: 32px;
+  height: 22px;
+  padding: 0 5px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 1;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* START badge — green pill */
+.start-badge {
+  width: 26px;
+  height: 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 1;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* FINISH badge — dark navy pill */
+.finish-badge {
+  width: 26px;
+  height: 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1e3a5f;
+  color: #fff;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 1;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Site-hover pulse animation (triggered from diagnostics warning hover) */
+@keyframes site-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.85; transform: scale(1.15); }
+}
+
+@keyframes solver-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.12); opacity: 1; }
+}
+
+@keyframes solver-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.solver-pulse {
+  animation: solver-pulse 1.8s ease-in-out infinite;
+}
+
+.solver-progress-fill {
+  background: linear-gradient(90deg, #0ea5e9 0%, #22d3ee 35%, #67e8f9 50%, #22d3ee 65%, #0891b2 100%);
+  background-size: 200% 100%;
+  box-shadow: 0 0 24px rgba(34, 211, 238, 0.2);
+  transition: width 420ms ease-out;
+  animation: solver-shimmer 2.8s linear infinite;
+}

@@ -1,0 +1,175 @@
+{
+  "recommendations": [
+    {
+      "id": "015c2a74",
+      "created_at": "2026-05-14T15:00:20.472759",
+      "status": "infeasible",
+      "objective_function": "balanced",
+      "horizon_days": 1,
+      "routes": [],
+      "total_distance_km": 0.0,
+      "transport_cost_eur": 0.0,
+      "handling_cost_eur": 0.0,
+      "total_cost_eur": 0.0,
+      "total_mwh_moved": 0.0,
+      "eur_per_mwh": null,
+      "energy_moved_debug": null,
+      "sites_served": 0,
+      "critical_sites_addressed": 0,
+      "risk_reduction_score": 0.0,
+      "explanation": "No feasible plan found for 1 demand site(s) with 2 truck(s) over 1 day(s). The VRP solver exhausted its time budget without finding a valid route.",
+      "warnings": [
+        "Day 1: [TRIVIAL_ROUTE] truck=TRUCK002 day=1 delivered=0 picked=0 op_stops=0 dist=93.0km \u2014 discarded (no operations)",
+        "Day 1: [SWAP_ASSIGNMENT_ZERO_SERVICE] strict assignment produced 0 actionable routes; retrying with relaxed swap rules",
+        "Day 1: [TRIVIAL_ROUTE] truck=TRUCK002 day=1 delivered=0 picked=0 op_stops=0 dist=93.0km \u2014 discarded (no operations)",
+        "Day 1: [MINIMAL_SWAP_FALLBACK] strict and relaxed assignment both failed; delivery-only swaps applied",
+        "Day 1: [TRIVIAL_ROUTE] truck=TRUCK002 day=1 delivered=0 picked=0 op_stops=0 dist=93.0km \u2014 discarded (no operations)",
+        "[NO_ACTIONABLE_SWAPS_DAY] Day 1: no actionable swaps (positioning day)",
+        "[ZERO_SERVICE] Solution rejected: no operational value \u2014 1 route(s) generated but 0 service stops performed (no containers moved across 1 demand site(s)). All routes are empty movements without container swaps."
+      ],
+      "feasibility_level": "INFEASIBLE",
+      "reason_code": "NO_FEASIBLE_ROUTES",
+      "reason_message": "No feasible plan found for 1 demand site(s) with 2 truck(s) over 1 day(s). The VRP solver exhausted its time budget without finding a valid route.",
+      "unreturned_containers": 0,
+      "container_moves": [],
+      "solution_feedback": [
+        {
+          "type": "error",
+          "code": "NO_FEASIBLE_ROUTES",
+          "message": "No feasible plan found for 1 demand site(s) with 2 truck(s) over 1 day(s). The VRP solver exhausted its time budget without finding a valid route."
+        },
+        {
+          "type": "info",
+          "code": "ROUTES_ZERO_DIAGNOSTICS",
+          "message": "demand_in=1 active_demand=1 raw_routes=1 routes_after_prune=1"
+        }
+      ],
+      "solution_risk_score": null,
+      "flaring_exposure_hours": null,
+      "end_of_horizon_imbalance": 0,
+      "fleet_config": null,
+      "fill_sites_count": 0,
+      "transfer_hubs_count": 0,
+      "fill_sites_visited": 0,
+      "transfer_hubs_visited": 0,
+      "infeasibility_diagnostics": {
+        "constraints": {
+          "max_driver_hours": 9.0,
+          "max_driver_min": 540.0,
+          "service_time_min": 20.0,
+          "avg_speed_kmph": 80.0
+        },
+        "trucks": [
+          {
+            "truck_id": "TRUCK001",
+            "start_site_id": "helsinki_malmi",
+            "start_site_name": "Hub A",
+            "config_initial_load": 0,
+            "actual_current_load": 0,
+            "capacity": 3,
+            "availability_days": 1
+          },
+          {
+            "truck_id": "TRUCK002",
+            "start_site_id": "huittinen_vampula",
+            "start_site_name": "Plant B",
+            "config_initial_load": 0,
+            "actual_current_load": 0,
+            "capacity": 3,
+            "availability_days": 1
+          }
+        ],
+        "demand_sites": [
+          {
+            "site_id": "tampere",
+            "site_name": "Station C",
+            "site_type": "traffic",
+            "risk_level": "?",
+            "hours_to_critical": 36.0,
+            "bays_fixed": 2,
+            "swappable_bays": 0,
+            "trucks": [
+              {
+                "truck_id": "TRUCK001",
+                "dist_km": 176.0,
+                "drive_min": 132.0,
+                "fits_direct": true
+              },
+              {
+                "truck_id": "TRUCK002",
+                "dist_km": 93.0,
+                "drive_min": 69.8,
+                "fits_direct": true
+              }
+            ]
+          }
+        ],
+        "producer_hubs": [
+          {
+            "site_id": "helsinki_malmi",
+            "site_name": "Hub A",
+            "full_bays": 3,
+            "near_full_bays": 0,
+            "trucks": [
+              {
+                "truck_id": "TRUCK001",
+                "dist_km": 0,
+                "drive_min": 0.0
+              },
+              {
+                "truck_id": "TRUCK002",
+                "dist_km": 191.0,
+                "drive_min": 143.2
+              }
+            ]
+          }
+        ],
+        "flow_analysis": [
+          {
+            "truck_id": "TRUCK001",
+            "nearest_producer": "Hub A",
+            "drive_to_producer_min": 0.0,
+            "routes": [
+              {
+                "demand_site": "Station C",
+                "route": "start\u2192Hub A\u2192Station C\u2192start",
+                "total_drive_min": 264.0,
+                "service_min": 40.0,
+                "total_min": 304.0,
+                "budget_min": 540.0,
+                "feasible": true
+              }
+            ]
+          },
+          {
+            "truck_id": "TRUCK002",
+            "nearest_producer": "Hub A",
+            "drive_to_producer_min": 143.2,
+            "routes": [
+              {
+                "demand_site": "Station C",
+                "route": "start\u2192Hub A\u2192Station C\u2192start",
+                "total_drive_min": 344.9,
+                "service_min": 40.0,
+                "total_min": 384.9,
+                "budget_min": 540.0,
+                "feasible": true
+              }
+            ]
+          }
+        ],
+        "fallback_warnings": [
+          "Day 1: [TRIVIAL_ROUTE] truck=TRUCK002 day=1 delivered=0 picked=0 op_stops=0 dist=93.0km \u2014 discarded (no operations)",
+          "Day 1: [SWAP_ASSIGNMENT_ZERO_SERVICE] strict assignment produced 0 actionable routes; retrying with relaxed swap rules",
+          "Day 1: [TRIVIAL_ROUTE] truck=TRUCK002 day=1 delivered=0 picked=0 op_stops=0 dist=93.0km \u2014 discarded (no operations)",
+          "Day 1: [MINIMAL_SWAP_FALLBACK] strict and relaxed assignment both failed; delivery-only swaps applied",
+          "Day 1: [TRIVIAL_ROUTE] truck=TRUCK002 day=1 delivered=0 picked=0 op_stops=0 dist=93.0km \u2014 discarded (no operations)",
+          "[NO_ACTIONABLE_SWAPS_DAY] Day 1: no actionable swaps (positioning day)",
+          "[ZERO_SERVICE] Solution rejected: no operational value \u2014 1 route(s) generated but 0 service stops performed (no containers moved across 1 demand site(s)). All routes are empty movements without container swaps."
+        ]
+      },
+      "total_time_hours": 0.0,
+      "num_trucks_used": 0
+    }
+  ]
+}
